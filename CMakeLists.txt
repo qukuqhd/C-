@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.20)
+project(test_pro VERSION 0.1.0 LANGUAGES C)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
+file(GLOB headers ${CMAKE_CURRENT_SOURCE_DIR}/include/*.h)
+add_executable(test_pro main.c ${headers})
